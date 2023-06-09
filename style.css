@@ -1,6 +1,34 @@
+body {
+  height: 50vh;
+  background-image: url("./img/galbigak_menu_mobile_06back.png");
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: cover;
+  background: url("./img/galbigak_menu_mobile_06back.png") repeat-y center/cover;
+}
+
 img {
   display: inline-block;
   width: auto !important;
   max-width: 100%;
   height: auto !important;
+}
+
+.image-container {
+  display: flex;
+}
+
+.image-container img {
+  display: inline-block;
+  flex: 1;
+  margin: 5px;
+  width: auto !important;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 200px) {
+  .image-container img {
+    max-width: 3000%;
+  }
 }
